@@ -2,6 +2,7 @@ from model import generateAI
 from flask import Flask,request
 import pickle
 
+generateAI()
 ai=pickle.load(open('ai.pkl','rb'))
 app=Flask(__name__)
 
